@@ -1,0 +1,329 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+.first{
+    height:100vh;
+}
+
+.headings{
+    width:90%;
+    height:10vh;
+    margin:50px auto;
+    display:flex;
+   
+}
+
+.tasklist{
+  
+   margin:auto;
+}
+
+.task{
+    font-weight:bold;
+    font-size:2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lists{
+    font-size:2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity:0.5;
+}
+
+
+.addlist{
+   font-size:2.5rem;
+   font-family: Arial, Helvetica, sans-serif;
+    margin:auto;
+    opacity:0.5;
+}
+
+.cards{
+    display:flex;
+    width:80%;
+    margin:auto;
+}
+
+.card1{
+    width:13vw;
+    border:1px solid orangered;
+    border-radius:10px;
+    height:40vh;
+    margin:auto;
+    box-shadow: 3px 3px 5px rgb(194, 187, 187);
+    position:relative;
+
+}
+
+.seccard1>i{
+    display:inline-block;
+    position:absolute;
+    bottom:10px;
+    right:9px;
+}
+
+.inres{
+    display:none;
+}
+
+.cardhead{
+    color:orangered;
+    font-size: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:10px;
+    border-bottom:1px solid black;
+    margin-left:30px;
+    margin-top:20px;
+}
+
+.strike{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color:orangered;
+    text-decoration: line-through;
+    size:20px;
+    padding-top: 30px;
+    padding-left:30px;
+}
+
+.check{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    padding-top:30px;
+    padding-left:20px;
+}
+
+/*----------------------------------------------------------------*/
+.second{
+    height:100vh;
+    padding-top:50px;
+}
+
+.sechead{
+    width:80%;
+    height:10vh;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    
+    
+
+}
+
+.secline{
+    width:100px;
+    margin-top:3%;
+    background-color:black;
+    height:1px;
+}
+
+.secheadd{
+    
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.secheadd>.insecres{
+    display:none;
+}
+
+.back{
+    display:flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-top:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity:0.5;
+}
+
+.seccard1{
+    width:20vw;
+    border:1px solid orangered;
+    border-radius:10px;
+    height:40vh;
+    margin:30px auto;
+    box-shadow: 3px 3px 5px rgb(194, 187, 187);;
+
+}
+
+.seccardhead{
+    color:orangered;
+    font-size: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:10px;
+    border-bottom:1px solid black;
+    margin-left:70px;
+    margin-top:20px;
+}
+
+.secstrike{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color:orangered;
+    text-decoration: line-through;
+    size:20px;
+    padding-top: 30px;
+    padding-left:70px;
+}
+
+.seccheck{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    padding-top:30px;
+    padding-left:70px;
+}
+
+/*********************************************/
+
+.third{
+    padding-top:50px;
+    filter:blur(4px);
+    height:100vh;
+}
+
+.popup{
+    width:25vw;
+    border:1px solid orangered;
+    background-color: white;
+    height:25vh;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgb(185, 182, 182);
+    z-index: 9999;
+    position:relative;
+    bottom:65vh;
+    left:38%;
+}
+
+.popup>p{
+    color:orangered;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    padding-top:5px;
+}
+
+.popup>input{
+    width:80%;
+    height:5vh;
+    margin-left:30px;
+    margin-top:15px;
+    border:none;
+    border:1px solid orangered;
+    border-radius:5px;
+    box-shadow: 3px 3px 10px rgb(185, 182, 182);
+}
+
+.add{
+    background-color:orangered;
+    color:white;
+    border:none;
+    border-radius:15px;
+    width:23%;
+    margin-top:15px;
+    height:5vh;
+}
+
+/***************************/
+
+.fourth{
+    height:100vh;
+    filter:blur(5px);
+}
+
+/*****RESPONSIVE*****************/
+
+@media only screen and (max-width: 600px) {
+
+.tasklist{
+
+}
+
+.addlist>span{
+    display:none;
+}
+
+.cards{
+    flex-direction:column;
+}
+
+.card1{
+    width:95%;
+    height:8vh;
+    margin:auto auto 20px auto;
+    border:1px solid rgb(216, 190, 180);
+    border-radius: 5px;
+    box-shadow:3px 3px 5px rgb(206, 201, 201);
+    
+    
+    
+}
+.cardhead{
+    border:none;
+    margin:0;
+    color:black;
+    opacity:0.5;
+}
+
+.card1>.strike, .check{
+    display:none;
+}
+
+.nores{
+    display:none;
+}
+
+.inres{
+    display:block;
+}
+
+/******SECOND*************/
+
+.secline{
+    display:none;
+}
+
+
+
+.secheadd>.insecres{
+    display:inline-block;
+    
+}
+
+.back{
+    display:none;
+}
+
+.seccard1{
+    width:60vw;
+    height:70vh;
+    margin-top:20px;
+    border:1px solid orangered;
+}
+
+.seccardhead{
+    font-size:25px;
+}
+
+.secstrike{
+    font-size: 20px;
+}
+
+/*****THIRD******/
+
+.popup{
+    width:70%;
+    position:relative;
+    left:15%;
+    top:100%;
+}
+
+
+
+
+
+
+
+}
