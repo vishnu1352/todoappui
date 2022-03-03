@@ -126,8 +126,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 .secheadd>.insecres{
     display:none;
+}
+
+.text{
+    text-decoration: none;
+    color:black;
 }
 
 .back{
